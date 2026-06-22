@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Feedback Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="form-section">
+    <form id="feedback-form" novalidate>
+      <h1>User Feedback Form</h1>
+
+      <label for="user-name">Name</label>
+      <input type="text" id="user-name" data-tooltip="Enter your full name" />
+      <span id="name-error" class="error"></span>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" data-tooltip="We'll use this to reply" />
+      <span id="email-error" class="error"></span>
+
+      <label for="comments">Comments</label>
+      <textarea id="comments" rows="4" maxlength="300" data-tooltip="Max 300 characters"></textarea>
+      <span id="char-count">0 / 300</span>
+      <span id="comments-error" class="error"></span>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+
+  <div id="feedback-display"></div>
+
+  <div id="tooltip"></div>
+
+  <script src="cp_1.js"></script>
+</body>
+</html>
